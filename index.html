@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juanjo Martin | Mi web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <script>
+      function desaparece() {
+        var element = document.getElementsByClassName("progress-bar");
+        element.classList.toggle("d-none");
+      }
+    </script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="navbarscroll">
+        <a class="navbar-brand" href="#">Juanjo Martin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto mr-3">
+            <a class="nav-item nav-link" href="#bienvenida">Inicio</a>
+            <a class="nav-item nav-link smoothscroll" href="#about">Sobre mí</a>
+            <a class="nav-item nav-link" href="#">Proyectos</a>
+            <a class="nav-item nav-link" href="#">Contacto</a>
+          </div>
+        </div>
+      </nav>
+    <!--Seccion de bienvenida-->
+    <div data-spy="scroll" data-target="navbarscroll" id="smoothscroll">
+      <section class="bienvenida" id="bienvenida">
+        <div class="contenedor">
+            <h1 class="texto1">Bienvenido a mi página web</h1>
+            <p class="texto2">"Informática autodidacta"</p>
+        </div>
+      </section>
+      <!--Seccion de bienvenida-->
+      <!--Seccion about-->
+      <section class="about" id="about">
+        <!--Título sobre mí-->
+        <h2 class="mx-auto mt-5">Sobre mí</h2>
+        <!--Título sobre mí-->
+        <div class="separador ml-auto mr-auto mb-4"></div>
+        <!--Texto sobre mí-->
+        <div class="contenedor-texto-y-habilidades">
+          <div class="ml-2 texto-sobremi" id="texto-sobremi">
+            <p>Soy estudiante de primer año de Sistemas Microinformáticos y Redes. <br>
+                Desde pequeño me apasiona la informática, siempre he curioseado mucho sobre ordenadores, software, etc. <br><br>
+                El desarrollo web junto a la programación, fue lo que más llamó mi atención, aunque en un futuro
+                me gustaría formarme en seguridad informática.
+            </p>
+          </div>
+          <!--Hacer un js que al pulsar sobre el boton "Habilidades
+          despligue una especie de "abanico" con todas mis habilidades (desarrollo web,
+          programas ofimáticos, sistemas operativos, Python, Redes, Hardware, etc.)"-->
+
+          <!--HABILIDADES-->
+          <div class="ml-auto mr-5 contenedor-habilidades">
+            <button type="button" class="btn btn-danger" id="boton" onclick="desaparece()">Habilidades</button>
+            <!--Desaparecer este div al pulsar sobre el boton habilidades-->
+            <div class="wrapper">
+              <p class="mt-3">Desarrollo Web (HTML, CSS + Bootstrap y JS)</p>
+            <div class="progress" id="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">hola</p>
+            <div class="progress" id="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">hola</p>
+            <div class="progress" id="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="mt-2">hola</p>
+            <div class="progress" id="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        <!--HABILIDADES-->
+        
+      </section>
+      <!--Seccion about-->
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
